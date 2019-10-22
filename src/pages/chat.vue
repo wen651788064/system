@@ -21,7 +21,7 @@
       };
       let self = this;
       this.socket.onmessage = function (message) {
-        console.log('receive message: ' + message.data);
+        console.log('receive message: ' + message.data.i);
 
         let {i } = message.data;
         self.data = i;
