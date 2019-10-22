@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Order from '../pages/order';
 import Index from '../pages/index';
 import Register from '../pages/register';
-
+import Chat from '../pages/chat'
 Vue.use(Router)
 
 
@@ -19,6 +19,10 @@ let constantRouterMap = [
   {
     path: '/order',
     component: Order,
+  },
+  {
+    path: '/chat',
+    component: Chat,
   },
 ];
 
