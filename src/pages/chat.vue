@@ -21,10 +21,9 @@
       };
       let self = this;
       this.socket.onmessage = function (message) {
-        console.log('receive message: ' + message.data.i);
+        console.log('receive message: ' + message.data );
 
-        let {i } = message.data;
-        self.data = i;
+        self.data = message.data;
       };
       this.socket.onerror = function (error) {
         console.log('Error: ' + error.name + error.number);
